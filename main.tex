@@ -1,11 +1,11 @@
-\documentclass[lang=cn,10pt]{elegantbook}
+\documentclass[lang=cn,newtx,10pt,scheme=chinese]{elegantbook}
 
-\title{MirrorBook：基于 \LaTeX{} 的新手指引}
+\title{MirrorBook：棱镜树不完全生存指南}
 \subtitle{棱镜之书 - 序章}
 
 \author{Various Artists}
-\institute{Mirror\LaTeX{} Program}
-\date{January 6, 2025}
+\institute{Mirror\LaTeX{} Project}
+\date{January 7, 2025}
 \version{0.1}
 % \bioinfo{自定义}{信息}
 
@@ -21,8 +21,11 @@
 \newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
 
 % 修改标题页的橙色带
-% \definecolor{customcolor}{RGB}{32,178,170}
-% \colorlet{coverlinecolor}{customcolor}
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+\usepackage{cprotect}
+
+\addbibresource[location=local]{reference.bib} % 参考文献，不要删除
 
 \begin{document}
 
@@ -33,93 +36,48 @@
 
 \mainmatter
 
-\chapter{Elegant\LaTeX{} 系列模板介绍}
+\chapter{棱镜树简介}
 
-Elegant\LaTeX{} 项目组致力于打造一系列美观、优雅、简便的模板方便用户使用。目前由 \href{https://github.com/ElegantLaTeX/ElegantNote}{ElegantNote}，\href{https://github.com/ElegantLaTeX/ElegantBook}{ElegantBook}，\href{https://github.com/ElegantLaTeX/ElegantPaper}{ElegantPaper} 组成，分别用于排版笔记，书籍和工作论文。强烈推荐使用最新正式版本！本文将介绍本模板的一些设置内容以及基本使用方法。如果您有其他问题，建议或者意见，欢迎在 GitHub 上给我们提交 \href{https://github.com/ElegantLaTeX/ElegantBook/issues}{issues} 或者邮件联系我们。
+一般来说，你只需阅览此章节便可开始在服务器当中的快乐游玩，其中将囊括此服务器中添加的主要衍生内容、重要的公共建筑和常用指令集。简而言之，棱镜树（MirrorTree）是一个拥有顾名思义的世界观，并以此为故事主线进行游玩体验设计的 Minecraft 服务器。你可以在腐竹的个人博客上找到详细的世界观，目前包含 \href{https://vichain.cn/tale/30}{《棱镜树·序》}，\href{https://vichain.cn/tale/41}{《棱镜树·灵》}，\href{https://vichain.cn/tale/54}{《棱镜树·冬》} 三篇。同时，我们的联系方式也列在此处，欢迎关注。
 
-我们的联系方式如下，建议加入用户 QQ 群提问，这样能更快获得准确的反馈，加群时请备注 \LaTeX{} 或者 Elegant\LaTeX{} 相关内容。
 \begin{itemize}
-  \item 官网：\href{https://elegantlatex.org/}{https://elegantlatex.org/}（暂时歇业）
-  \item GitHub 地址：\href{https://github.com/ElegantLaTeX/}{https://github.com/ElegantLaTeX/}
-  \item Gitee 地址：\href{https://gitee.com/ElegantLaTeX}{https://gitee.com/ElegantLaTeX}
-  \item CTAN 地址：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
-  \item 下载地址：\href{https://github.com/ElegantLaTeX/ElegantBook/releases}{正式发行版}，\href{https://github.com/ElegantLaTeX/ElegantBook/archive/master.zip}{最新版}
-  \item 微博：Elegant\LaTeX{}（密码有点忘了）
-  \item 微信公众号：Elegant\LaTeX{}（不定期更新）
-  \item 用户 QQ 群：692108391（建议加群）
-  \item 邮件：\email{elegantlatex2e@gmail.com}
+    \item 玩家 QQ 群：876535736（多水群）
+    \item GitHub 地址：\href{https://github.com/MirrorTree-MC}{https://github.com/MirrorTree-MC}
+    \item 民营 Wiki：\href{https://wiki.mirror.bearcabbage.top/}{https://wiki.mirror.bearcabbage.top/}
+    \item 官方 Wiki：\href{https://wiki-mirror.bearcabbage.top/}{https://wiki-mirror.bearcabbage.top/}
 \end{itemize}
 
-\section{模板安装与更新}
+\section{主要衍生内容}
 
-你可以通过免安装的方式使用本模板，包括在线使用和本地（文件夹内）使用两种方式，也可以通过 \TeX{} 发行版安装使用。
+\section{重要公共建筑}
 
-\subsection{在线使用模板}
+\section{常用指令集合}
 
-我们把三套模板全部上传到 \href{https://www.overleaf.com/}{Overleaf} 上了，网络便利的用户可以直接通过 Overleaf 在线使用我们的模板。使用 Overleaf 的好处是无需安装 \TeX{} Live，可以随时随地访问自己的文件。查找模板，请在 Overleaf 模板库里面搜索 \lstinline{elegantlatex} 即可，你也可以直接访问\href{https://www.overleaf.com/latex/templates?addsearch=elegantlatex}{搜索结果}。选择适当的模板之后，将其 \lstinline{Open as Template}，即可把模板存到自己账户下，然后可以自由编辑以及与别人一起协作。更多关于 Overleaf 的介绍和使用，请参考 Overleaf 的\href{https://www.overleaf.com/learn}{官方文档}。
+\chapter{生存技巧（特性）}
 
-\subsection{本地免安装使用}
+或许你正在诅咒胡萝卜——欢迎来到琪露诺的完美生存教室！
 
-\textbf{免安装}使用方法如下：从 GitHub 或者 CTAN 下载最新版，严格意义上只需要类文件 \lstinline{elegantbook.cls}。然后将模板文件放在你的工作目录下即可使用。这样使用的好处是，无需安装，简便；缺点是，当模板更新之后，你需要手动替换 \lstinline{cls} 文件。
+\chapter{世界观设定}
 
-\subsection{发行版安装与更新}
+既然你已经耐心地看到了这里，不妨来更加深入地了解一下棱镜树世界观背后的更多设定。
 
-本模板测试环境为 
-\begin{enumerate}
-  \item Win10 + \TeX{} Live 2022；
-  \item Ubuntu 20.04 + \TeX{} Live 2022；
-  \item macOS Monterey + Mac\TeX{} 2022。
-\end{enumerate}
-
-\TeX Live/Mac\TeX{} 的安装请参考啸行的\href{https://github.com/OsbertWang/install-latex-guide-zh-cn/releases/}{一份简短的关于安装 \LaTeX{} 安装的介绍}。
-
-安装 \TeX{} Live 之后，安装后建议升级全部宏包，升级方法：使用 cmd 或 terminal 运行 \lstinline{tlmgr update --all}，如果 tlmgr 需要更新，请使用 cmd 运行 \lstinline{tlmgr update --self}，如果更新过程中出现了中断，请改用 \lstinline{tlmgr update --self --all --reinstall-forcibly-removed} 更新，也即
-
-\begin{lstlisting}
-tlmgr update --self 
-tlmgr update --all
-tlmgr update --self --all --reinstall-forcibly-removed
-\end{lstlisting}
-
-更多的内容请参考 \href{https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution}{How do I update my \TeX{} distribution?}
-
-\subsection{其他发行版本}
-
-由于宏包版本问题，本模板不支持 C\TeX{} 套装，请务必安装 TeX Live/Mac\TeX{}。更多关于 \TeX{} Live 的安装使用以及 C\TeX{} 与 \TeX{} Live 的兼容、系统路径问题，请参考官方文档以及啸行的\href{https://github.com/OsbertWang/install-latex-guide-zh-cn/releases/}{一份简短的关于安装 \LaTeX{} 安装的介绍}。
-
-
-\section{关于提交}
-
-出于某些因素的考虑，Elegant\LaTeX{} 项目自 2019 年 5 月 20 日开始，\textbf{不再接受任何非作者预约性质的提交}（pull request）！如果你想改进模板，你可以给我们提交 issues，或者可以在遵循协议（LPPL-1.3c）的情况下，克隆到自己仓库下进行修改。
+\nocite{*}
+% \printbibliography[heading=bibintoc, title=\ebibname]
+\appendix
 
 \chapter{版本更新历史}
 
-根据用户的反馈，我们不断修正和完善模板。由于 3.00 之前版本与现在版本差异非常大，在此不列出 3.00 之前的更新内容。
+你可以在下方找到自\textbf{新建文件夹}以来的版本更新记录，亦即摸鱼记录。
 
-
-\datechange{2025/01/06}{ 新建项目文件夹 }
+\datechange{2025/01/07}{新建项目文件夹}
 
 \begin{change}
   \item 基于 ElegantBook 模板开始进行初步的适应性修改。
+  \item 添加了基本的结构框架，等待 Mods 实装完成。
 \end{change}
 
-\nocite{*}
-\printbibliography[heading=bibintoc, title=\ebibname]
-\appendix
+\chapter{玩家简介}
 
-\chapter{基本数学工具}
-
-
-本附录包括了计量经济学中用到的一些基本数学，我们扼要论述了求和算子的各种性质，研究了线性和某些非线性方程的性质，并复习了比例和百分数。我们还介绍了一些在应用计量经济学中常见的特殊函数，包括二次函数和自然对数，前 4 节只要求基本的代数技巧，第 5 节则对微分学进行了简要回顾；虽然要理解本书的大部分内容，微积分并非必需，但在一些章末附录和第 3 篇某些高深专题中，我们还是用到了微积分。
-
-\section{求和算子与描述统计量}
-
-\textbf{求和算子} 是用以表达多个数求和运算的一个缩略符号，它在统计学和计量经济学分析中扮演着重要作用。如果 $\{x_i: i=1, 2, \ldots, n\}$ 表示 $n$ 个数的一个序列，那么我们就把这 $n$ 个数的和写为：
-
-\begin{equation}
-\sum_{i=1}^n x_i \equiv x_1 + x_2 +\cdots + x_n
-\end{equation}
-
-
+棱镜树并不大，所以列出主要活动玩家并非是一件困难的事情。了解更多细节也有助于和他们进行\textit{友好交流}（bushi）。
 
 \end{document}
