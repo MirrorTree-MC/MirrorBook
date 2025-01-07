@@ -1,6 +1,9 @@
 <!-- Author : Dongsheng Deng & Liam Huang-->
 <!-- Program Email: elegantlatex2e@gmail.com -->
 
+> [!NOTE]
+> MirrorBook 是基于 [ElegantBook](https://github.com/ElegantLaTeX/ElegantBook) 模板而创建的[棱镜树维基](https://wiki.mirror.bearcabbage.top/)编译版本。当前项目处于实验阶段，故我们直接保留了 ElegantBook 原始的 README.md 文件如下。
+
 [Homepage](https://elegantlatex.org/) | [Github](https://github.com/ElegantLaTeX/ElegantBook) | [CTAN](https://ctan.org/pkg/elegantbook) | [Download](https://github.com/ElegantLaTeX/ElegantBook/releases) |
 
 ![License](https://img.shields.io/ctan/l/elegantbook.svg) ![CTAN Version](https://img.shields.io/ctan/v/elegantbook.svg) ![Github Version](https://img.shields.io/github/release/ElegantLaTeX/ElegantBook.svg) ![Repo Size](https://img.shields.io/github/repo-size/ElegantLaTeX/ElegantBook.svg)
